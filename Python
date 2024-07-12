@@ -1,0 +1,19 @@
+class Dragon:
+    def __init__(self, name, scale_color, wing_span, breath_type):
+        self.name = name
+        self.scale_color = scale_color
+        self.wing_span = wing_span  # In meters
+        self.breath_type = breath_type
+
+    def fly(self):
+        return f"{self.name} spreads its {self.wing_span}-meter wings and takes to the skies."
+
+    def breathe(self):
+        return f"{self.name} exhales {self.breath_type}, commanding respect from all who witness its power."
+
+# Example usage:
+sky_titan = Dragon("Sky Titan", "emerald green", 50, "blazing inferno")
+print(sky_titan.fly())
+print(sky_titan.breathe())
+
+
